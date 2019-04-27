@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta utf="utf-8">
+        <title>My To-Do's App</title>
+        <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+    </head>
+    <body>
+        <h1>To-Do Manager - Home</h1>
+        
+        <div id="header">
+            <div id="summary" >
+            </div>
+            <div id="search-box">
+                Search Here: <input id="search-todo" type="text" placeholder="Search for a todo">
+            </div>
+        </div>
+        
+        <div id="checkbox-container">
+            <label>
+                <input id="checkbox" type="checkbox"> Hide Completed
+            </label>
+        </div>
+                
+        <div id="todo-box">
+            <div id="my-todos-list">
+            </div>
+        </div>
+        
+        <form id="todo-form">
+            <input id="todo-input" type="text" placeholder="What do you want to get done today?" name="todoForm">
+            <button id="submit">Let's Go</button>
+        </form>
+        <!-- <script src="uuidv4.js"></script>
+        <script src="todo-functions.js"></script>
+        <script src="todo-list.js"></script> -->
+        <script src="./scripts/bundle.js"></script>
+    </body>
+</html>
