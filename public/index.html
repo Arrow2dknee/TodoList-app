@@ -1,39 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta utf="utf-8">
-        <title>My To-Do's App</title>
-        <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-    </head>
-    <body>
-        <h1>To-Do Manager - Home</h1>
-        
-        <div id="header">
-            <div id="summary" >
-            </div>
-            <div id="search-box">
-                Search Here: <input id="search-todo" type="text" placeholder="Search for a todo">
-            </div>
-        </div>
-        
-        <div id="checkbox-container">
-            <label>
-                <input id="checkbox" type="checkbox"> Hide Completed
-            </label>
-        </div>
-                
-        <div id="todo-box">
-            <div id="my-todos-list">
-            </div>
-        </div>
-        
-        <form id="todo-form">
-            <input id="todo-input" type="text" placeholder="What do you want to get done today?" name="todoForm">
-            <button id="submit">Let's Go</button>
-        </form>
-        <!-- <script src="uuidv4.js"></script>
+  <head>
+    <meta utf="utf-8" />
+    <title>My To-Do's</title>
+    <link rel="icon" href="./images/favicon.png?v=1" />
+    <link rel="stylesheet" type="text/css" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__title">To-Do Manager - Home</h1>
+        <p class="header__subtitle">
+          “Amateurs sit and wait for inspiration, the rest of us just get up and
+          go to work.” ~ Stephen King
+        </p>
+      </div>
+    </header>
+
+    <div class="actions">
+      <div class="actions__container">
+        <input
+          id="search-todo"
+          class="input"
+          type="text"
+          placeholder="Search for a todo"
+        />
+        <label class="checkbox">
+          <input id="checkbox" type="checkbox" /> Hide Completed
+        </label>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="summary"></div>
+      <div id="my-todos-list"></div>
+      <form id="todo-form">
+        <input
+          id="todo-input"
+          class="input input--add"
+          type="text"
+          placeholder="What do you want to get done today?"
+          name="todoForm"
+        />
+        <button id="submit" class="button">Let's Go</button>
+      </form>
+    </div>
+
+    <!-- <script src="uuidv4.js"></script>
         <script src="todo-functions.js"></script>
         <script src="todo-list.js"></script> -->
-        <script src="./scripts/bundle.js"></script>
-    </body>
+    <script src="./scripts/bundle.js"></script>
+  </body>
 </html>
